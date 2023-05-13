@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Máy bán hàng tự động</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Máy bán hàng tự động</h1>
+  <div class="product-list">
+    <h2>Danh sách sản phẩm:</h2>
+    <ul>
+      <li>coca - Giá tiền: 10000</li>
+      <li>pepsi - Giá tiền: 10000</li>
+      <li>bimbim - Giá tiền: 10000</li>
+      <li>nuocloc - Giá tiền: 5000</li>
+    </ul>
+  </div>
+  <div class="form">
+    <form>
+      <label for="money">Số tiền của bạn:</label>
+      <input type="number" id="money" name="money">
+      <br>
+      <label for="product">Sản phẩm:</label>
+      <select id="product" name="product">
+        <option value="">--Chọn sản phẩm--</option>
+        <option value="coca">coca</option>
+        <option value="pepsi">pepsi</option>
+        <option value="bimbim">bimbim</option>
+        <option value="nuocloc">nuocloc</option>
+      </select>
+      <br>
+      <button type="submit">Mua sản phẩm</button>
+    </form>
+  </div>
+  <div class="result">
+    <p>Số tiền còn lại của bạn là: <span id="remaining-money">0</span></p>
+    <p id="total-price">Không có sản phẩm nào được mua.</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
